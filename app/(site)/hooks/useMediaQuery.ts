@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 export function useMediaQuery(query: string): boolean {
   const getMatches = (query: string): boolean => {
-    // Prevents SSR issues
+    
     if (typeof window !== "undefined") {
       return window.matchMedia(query).matches
     }
@@ -35,7 +35,6 @@ export function useMediaQuery(query: string): boolean {
         matchMedia.removeEventListener("change", handleChange)
       }
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [query])
 
   return matches

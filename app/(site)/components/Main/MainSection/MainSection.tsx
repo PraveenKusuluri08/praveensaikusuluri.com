@@ -31,10 +31,10 @@ const MainSection = () => {
               transition: { duration: 0.3, delay: 0.6 },
             }}
           >
-            <span className="w-fit">Kusuluri</span>
             <span className="relative text-blue before:absolute before:-bottom-2 before:left-0 before:w-full before:h-1 md:before:h-2 md:before:-bottom-3 before:block before:bg-blue before:rounded-full">
               Praveen
             </span>
+            <span className="w-fit">Kusuluri</span>
           </motion.h1>
         </div>
 
